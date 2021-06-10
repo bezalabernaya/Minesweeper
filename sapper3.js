@@ -118,7 +118,7 @@ function init (columns, rows, mines) {
 
 
 let closeWin = document.querySelector('.close.youwin');
-let win = document.querySelector('.win');
+let win = document.querySelector('win');
 
 closeWin.addEventListener('click', function (evt) {//закрыть уведомление по клику
     evt.preventDefault();
@@ -126,7 +126,7 @@ closeWin.addEventListener('click', function (evt) {//закрыть уведом
 });
 
 let closeOver = document.querySelector('.close.over');
-let gameover = document.querySelector('.gameover');
+let gameover = document.querySelector('gameover');
 
 closeOver.addEventListener('click', function (evt) {//закрыть уведомление по клику
     evt.preventDefault();
@@ -157,7 +157,7 @@ function update () {//обновляем игровое поле
         });
 
     if (isLoose(matrix)) {
-        let gameover = document.querySelector('.gameover');
+        let gameover = document.querySelector('gameover');
         gameover.classList.add('appear');
         running = false;
         document.getElementsByClassName('gameover modal')[0].style.display = "block"//проявляем изображение
@@ -166,7 +166,7 @@ function update () {//обновляем игровое поле
 
     else if (isWin(matrix)) {
         document.getElementsByClassName('win modal')[0].style.display = "block" //проявляем изображение
-        let win = document.querySelector('.win');
+        let win = document.querySelector('win');
         win.classList.add('appear');
         running = false;
 		
