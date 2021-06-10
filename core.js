@@ -115,31 +115,31 @@ function matrixToHtml (matrix) {
             rowElement.append(imgElement);
 
             if (cell.flag) {
-                imgElement.src = 'img/11.png';
+                imgElement.src = '11.png';
                 continue;
             }
 
             if (cell.potencial) {
-                imgElement.src = 'img/11.png';
+                imgElement.src = '11.png';
                 continue;
             }
 
             if (!cell.show) {
-                imgElement.src = 'img/10.png';
+                imgElement.src = '10.png';
                 continue;
             }
 
             if (cell.mine) {
-                imgElement.src = 'img/9.png';
+                imgElement.src = '9.png';
                 continue;
             }
 
             if (cell.number) {
-                imgElement.src = 'img/' + cell.number + '.png';
+                imgElement.src = cell.number + '.png';
                 continue;
             }
 
-            imgElement.src = 'img/0.png';
+            imgElement.src = '0.png';
             
         }
 
